@@ -18,7 +18,7 @@ The hardware in the [ChipWhisperer CW308 Targets](https://www.github.com/newaete
 * STM32F3
 * SAML11 (has hardware AES)
 * SAM4L (has hardware AES)
-* MK82F (has hardware AES)
+* MK82F (has hardware AES, several AES engines available)
 * STM32L5 (has hardware AES)
 * STM32F4 (has hardware AES)
 * STM32L4  (has hardware AES)
@@ -35,6 +35,8 @@ The underlying dataset is stored in a Google Cloud Storage element. Usage from o
 
 T.B.D. if this is expensive it might become invite-only or something, or only some of the datasets are accessible.
 
+Currently the entire project is sponsored by NewAE Technology Inc.
+
 ## Usage Example
 
 Here is an example of how we hope you can use this (TODO - implement everything):
@@ -44,7 +46,7 @@ Here is an example of how we hope you can use this (TODO - implement everything)
 
 	cwd.list_datasets()
 
-		CW308_STM32F3-AESECB-MBEDTLS-FK0RI-SH-SYNC-01:
+       CW308_STM32F3-AESECB-MBEDTLS-FK0RI-SH-SYNC-01:
            Platform      : NAE-CW308T-STM32F3
            Board SN      : LN000289
            Chip          : STM32F303RCT6 (Date-Code: 1414)
@@ -75,7 +77,7 @@ The naming for datasets goes something like this:
 	<KEY TYPE>-             Fixed Key #2 (FK2), Random Key (RK), etc
 	<INPUT TYPE>-           Fixed Input #0 (FI0), Random Input (RI), etc
 	<NUM TRACES>-           Number of traces in this set
-	<SHUNT OR EM>-          Measurement taken with Shunt, EM, something else
+	<SHUNT OR EM>-          Measurement taken with SHunt, EM Probe, something else
 	<SYNC>-                 Syncronous Measurement (ChipWhisperer)
 	<N>-                    Variant number (in case we do multiple captures with same 'top-level' description).
 
