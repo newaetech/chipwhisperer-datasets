@@ -13,9 +13,10 @@ Note that is an *end goal* and it currently focuses on AES only. More coming soo
 
 ### Hardware Platforms
 
-The hardware in the [ChipWhisperer CW308 Targets](https://www.github.com/newaetech/chipwhisperer-cw308t-targets) repository is used as a list of available targets. The initial run will use the following target boards:
+The hardware in the [ChipWhisperer CW308 Targets](https://github.com/newaetech/chipwhisperer-target-cw308t) repository is used as a list of available targets. The initial run will use the following target boards:
 
 * STM32F3
+* XMEGA (8-bit)
 * SAML11 (has hardware AES)
 * SAM4L (has hardware AES)
 * MK82F (has hardware AES, several AES engines available)
